@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{7fc7d2a4-4faf-4279-b861-664d4d2170c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code">
+      <UniqueIdentifier>{20153dd0-6bb5-431c-851b-d1cf239b3bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party">
+      <UniqueIdentifier>{cff7962d-404e-436e-9c58-4e2527b7bb9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\The-Forge">
+      <UniqueIdentifier>{7aec4d8c-45f6-458b-9fe3-ac3ce2da8588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third-party\cgltf">
+      <UniqueIdentifier>{263790b2-5c67-4a2f-a9ca-e80f0b74eaaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{6ffc3f24-b4c1-4654-884c-e7b77e2e68b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\sparkle">
+      <UniqueIdentifier>{dcfed240-0f7e-4f06-9c3b-97ce3aaa4428}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FSLShader Include="..\shaders\Demo_ShaderList.fsl">
+      <Filter>shaders</Filter>
+    </FSLShader>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\light_injection.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\third-party\The-Forge\Examples_3\Build_Props\VS\TF_Shared.props">
+      <Filter>third-party\The-Forge</Filter>
+    </None>
+    <None Include="..\third-party\The-Forge\Examples_3\Build_Props\VS\Examples.x64.props">
+      <Filter>third-party\The-Forge</Filter>
+    </None>
+    <None Include="..\shaders\packed_vector.hlsli">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\code\main.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\cornell_box.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\demo.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\scene-bak.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\scene.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\asset_import_gltf.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\cgltf_implementation.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\code\asset_import.cpp">
+      <Filter>code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shaders\light_injection_shared.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\code\cornell_box.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\code\demo.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\code\scene.h">
+      <Filter>code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third-party\cgltf\cgltf.h">
+      <Filter>third-party\cgltf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\code\asset_import.h">
+      <Filter>code</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\third-party\gpu.cfg">
+      <Filter>third-party</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\assets\sparkle\sparkle.gltf">
+      <Filter>assets\sparkle</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\assets\sparkle\sparkle.bin">
+      <Filter>assets\sparkle</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>
