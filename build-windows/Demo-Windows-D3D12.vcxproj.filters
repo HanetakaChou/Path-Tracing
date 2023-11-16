@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{6564cc1a-1902-4833-bf99-8a3fd8b5f6fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\support">
+      <UniqueIdentifier>{4ea7a279-3984-44fb-905e-7243713ff6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{6b62e300-cff7-473b-81b7-b9828e035938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\support">
+      <UniqueIdentifier>{f073d837-86bb-44a4-a9f1-d345a470fd83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{02f7ed5c-b9ca-444c-ba1a-498aae6c4f30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\DXUT">
+      <UniqueIdentifier>{5819a2f3-a8df-4c24-9cb6-a98280683ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\DXUT\Optional">
+      <UniqueIdentifier>{50c6165e-602d-4620-a619-eff355d565ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\DXUT\thirdparty">
+      <UniqueIdentifier>{63c135a4-f07d-4564-9dbc-01824fce784f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\DXUT\thirdparty\Reversed-Z">
+      <UniqueIdentifier>{457a86a1-83f4-4f03-872f-0ec877fd17e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\dxbc">
+      <UniqueIdentifier>{424018a4-95f2-4cb7-9ff5-8868b7d17ebf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\demo.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\support\camera_controller.cpp">
+      <Filter>source\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\support\main.cpp">
+      <Filter>source\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\support\renderer.cpp">
+      <Filter>source\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\support\tick_count.cpp">
+      <Filter>source\support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\DXUT\Optional\DXUTcamera.cpp">
+      <Filter>thirdparty\DXUT\Optional</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\demo.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\support\camera_controller.h">
+      <Filter>source\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\support\frame_throttling.h">
+      <Filter>source\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\support\renderer.h">
+      <Filter>source\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\support\tick_count.h">
+      <Filter>source\support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\DXUT\Optional\DXUTcamera.h">
+      <Filter>thirdparty\DXUT\Optional</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\DXUT\thirdparty\Reversed-Z\reversed_z.h">
+      <Filter>thirdparty\DXUT\thirdparty\Reversed-Z</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\gbuffer_pipeline_resource_binding.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\ambient_occlusion_pipeline_resource_binding.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\pdf_sampling.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\low_discrepancy_sequence.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\math_constant.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\offset_ray_origin.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\common_gbuffer_pipeline_ambient_occlusion_pipeline_resource_binding.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\support\full_screen_transfer_pipeline_layout.sli">
+      <Filter>shaders\support</Filter>
+    </None>
+    <None Include="..\shaders\skin_pipeline_resource_binding.sli">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\dxbc\ambient_occlusion_compute.inl">
+      <Filter>shaders\dxbc</Filter>
+    </None>
+    <None Include="..\shaders\dxbc\full_screen_transfer_fragment.inl">
+      <Filter>shaders\dxbc</Filter>
+    </None>
+    <None Include="..\shaders\dxbc\full_screen_transfer_vertex.inl">
+      <Filter>shaders\dxbc</Filter>
+    </None>
+    <None Include="..\shaders\dxbc\gbuffer_compute.inl">
+      <Filter>shaders\dxbc</Filter>
+    </None>
+    <None Include="..\shaders\dxbc\skin_compute.inl">
+      <Filter>shaders\dxbc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\shaders\gbuffer_compute.sl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\shaders\ambient_occlusion_compute.sl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="..\shaders\support\full_screen_transfer_vertex.sl">
+      <Filter>shaders\support</Filter>
+    </FxCompile>
+    <FxCompile Include="..\shaders\support\full_screen_transfer_fragment.sl">
+      <Filter>shaders\support</Filter>
+    </FxCompile>
+    <FxCompile Include="..\shaders\skin_compute.sl">
+      <Filter>shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
